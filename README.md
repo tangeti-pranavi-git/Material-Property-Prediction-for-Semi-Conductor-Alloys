@@ -1,6 +1,6 @@
-Material Property Prediction using Machine Learning
+## Material Property Prediction using Machine Learning
 
-Project Overview:
+## Project Overview:
 This project builds a machine learning pipeline to predict material properties (such as band gap) using data obtained from the Materials Project API.
 Modern materials science produces massive datasets. Machine learning helps analyze this data efficiently and discover new materials with desirable electronic properties.
 This project demonstrates a complete ML workflow:
@@ -9,34 +9,20 @@ This project demonstrates a complete ML workflow:
 - Feature engineering
 - Machine learning model experimentation
 
-System Workflow:
+---
+## System Workflow:
 The system collects material data, cleans it, creates useful features, and trains machine learning models to predict band gap values.
 
-Project Structure
-material-property-prediction
-│
-├── data_collection.ipynb
-├── preprocess.ipynb
-├── feature_engineering.ipynb
-├── model_experiments.ipynb
-│
-├── data
-│   ├── raw
-│   ├── processed
-│   └── ml_ready
-│
-└── README.md
-
-Notebook Description:
+---
+##Notebook Description:
 1.data_collection.ipynb	Collects material data from Materials Project API
 2.preprocess.ipynb	Cleans and prepares dataset
 3.feature_engineering.ipynb	Converts raw attributes into ML features
 4.model_experiments.ipynb	Trains machine learning models
-
-Dataset Source:
+---
+#Dataset Source:
 The dataset used in this project is obtained from: Materials Project Database
-Website
-https://materialsproject.org/
+Website https://materialsproject.org/
 Materials Project provides computational data about crystal structures and material properties.
 
 Key Properties Used
@@ -51,7 +37,9 @@ Key Properties Used
 
 These properties help predict electronic properties of materials.
 
-Data Collection (Notebook: data_collection.ipynb):
+---
+
+## Data Collection (Notebook: data_collection.ipynb):
 This step connects to the Materials Project API and retrieves material data.
 
 Steps:
