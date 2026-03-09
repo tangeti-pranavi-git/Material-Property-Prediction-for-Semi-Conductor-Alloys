@@ -18,8 +18,6 @@ This project demonstrates a **complete ML workflow**:
 ---
 
 
----
-
 ## Notebook Description
 
 1. **data_collection.ipynb** – Collects material data from the Materials Project API  
@@ -33,8 +31,7 @@ This project demonstrates a **complete ML workflow**:
 
 The dataset used in this project is obtained from the **Materials Project Database**.
 
-Website:  
-https://materialsproject.org/
+Website:  https://materialsproject.org/
 
 Materials Project provides computational data about **crystal structures and material properties**.
 
@@ -105,7 +102,7 @@ The preprocessing stage prepares the raw dataset for machine learning.
 
 ## Feature Engineering
 
-**Notebook:** `feature_engineering.ipynb`
+**Notebook:** feature_engineering.ipynb
 
 Feature engineering transforms raw properties into **machine learning features**.
 
@@ -161,9 +158,13 @@ The model learns relationships between **material features and electronic band g
 ## Installation
 
 Clone the repository:
+
 git clone https://github.com/yourusername/material-property-prediction.git
+
 cd material-property-prediction
+
 Install required libraries:
+
 pip install pandas scikit-learn mp-api jupyter matplotlib seaborn
 
 ---
