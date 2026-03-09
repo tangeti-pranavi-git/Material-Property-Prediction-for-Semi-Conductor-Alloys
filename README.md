@@ -1,6 +1,10 @@
 # Material Property Prediction using Machine Learning
 
+
+---
+
 ## Project Overview
+
 This project builds a **machine learning pipeline to predict material properties (such as band gap)** using data obtained from the **Materials Project API**.
 
 Modern materials science produces massive datasets. Machine learning helps analyze this data efficiently and discover new materials with desirable electronic properties.
@@ -14,36 +18,10 @@ This project demonstrates a **complete ML workflow**:
 
 ---
 
-# System Workflow
+## System Workflow
 
 The system collects material data, cleans it, creates useful features, and trains machine learning models to predict **band gap values**.
 
-```mermaid
-flowchart TD
-A[Materials Project API] --> B[Data Collection]
-B --> C[Raw Dataset]
-C --> D[Data Preprocessing]
-D --> E[Cleaned Dataset]
-E --> F[Feature Engineering]
-F --> G[ML Ready Dataset]
-G --> H[Train Test Split]
-H --> I[Random Forest Model Training]
-I --> J[Model Evaluation]
-J --> K[Band Gap Prediction]
-Project Structure
-material-property-prediction
-│
-├── data_collection.ipynb
-├── preprocess.ipynb
-├── feature_engineering.ipynb
-├── model_experiments.ipynb
-│
-├── data
-│   ├── raw
-│   ├── processed
-│   └── ml_ready
-│
-└── README.md
 Notebook Description
 Notebook	Description
 data_collection.ipynb	Collects material data from Materials Project API
@@ -52,9 +30,7 @@ feature_engineering.ipynb	Converts raw attributes into ML features
 model_experiments.ipynb	Trains machine learning models
 Dataset Source
 
-The dataset used in this project is obtained from:
-
-Materials Project Database
+The dataset used in this project is obtained from the Materials Project Database.
 
 Website:
 https://materialsproject.org/
@@ -170,6 +146,7 @@ band_gap
 Dataset Split
 
 Training Set → 80%
+
 Testing Set → 20%
 
 Machine Learning Model
@@ -203,39 +180,33 @@ cd material-property-prediction
 Install required libraries
 
 pip install pandas scikit-learn mp-api jupyter matplotlib seaborn
+
+
 How to Run the Project
 
 Follow the notebooks in this order.
 
 Step 1 — Data Collection
 
-Run:
-
-data_collection.ipynb
+Run data_collection.ipynb
 
 This notebook collects material data from Materials Project.
 
 Step 2 — Data Preprocessing
 
-Run:
-
-preprocess.ipynb
+Run preprocess.ipynb
 
 This cleans the dataset and prepares it for machine learning.
 
 Step 3 — Feature Engineering
 
-Run:
-
-feature_engineering.ipynb
+Run feature_engineering.ipynb
 
 This creates ML-ready features and splits the dataset.
 
 Step 4 — Model Training
 
-Run:
-
-model_experiments.ipynb
+Run model_experiments.ipynb
 
 This trains machine learning models and evaluates performance.
 
