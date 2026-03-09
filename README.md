@@ -22,22 +22,21 @@ This project demonstrates a **complete ML workflow**:
 
 The system collects material data, cleans it, creates useful features, and trains machine learning models to predict **band gap values**.
 
-Notebook Description
-Notebook	Description
+---
+
+## Notebook	Description
 data_collection.ipynb	Collects material data from Materials Project API
 preprocess.ipynb	Cleans and prepares dataset
 feature_engineering.ipynb	Converts raw attributes into ML features
 model_experiments.ipynb	Trains machine learning models
-Dataset Source
+---
+
+## Dataset Source
 
 The dataset used in this project is obtained from the Materials Project Database.
-
-Website:
-https://materialsproject.org/
-
+Website: https://materialsproject.org/
 Materials Project provides computational data about crystal structures and material properties.
-
-Key Properties Used
+Key Properties Used:
 
 material_id
 
@@ -57,14 +56,12 @@ total_magnetization
 
 These properties help predict electronic properties of materials.
 
-Data Collection
+---
 
-Notebook: data_collection.ipynb
-
+## Data Collection (Notebook: data_collection.ipynb):
 This step connects to the Materials Project API and retrieves material data.
 
-Steps
-
+Steps:
 Connect to Materials Project API
 
 Request material summaries
@@ -91,9 +88,9 @@ energy_per_atom
 
 density
 
-Data Preprocessing
+---
 
-Notebook: preprocess.ipynb
+## Data Preprocessing (Notebook: preprocess.ipynb)
 
 The preprocessing stage prepares the raw dataset for machine learning.
 
